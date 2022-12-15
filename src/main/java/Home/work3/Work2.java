@@ -1,7 +1,7 @@
 package Home.work3;
 import java.util.Scanner;
 
-public class work2 {
+public class Work2 {
 
         public static void main(String[] args) {
             int number;

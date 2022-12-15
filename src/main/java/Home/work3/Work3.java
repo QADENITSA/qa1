@@ -2,7 +2,7 @@ package Home.work3;
 
 import java.util.Scanner;
 
-public class work3 {
+public class Work3 {
     public static void main(String[] args) {
         System.out.println("insert side a: ");
         Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,7 @@ package Home.work3;
 
 import java.util.Scanner;
 
-public class work1 {
+public class Work1 {
     public static void main(String[] args) {
 
             int b, d, p;

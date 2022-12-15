@@ -2,7 +2,7 @@ package Home.work3;
 
 import java.util.Scanner;
 
-public class work4 {
+public class Work4 {
     public static void main(String[] args) {
         int day;
         Scanner scanner = new Scanner(System.in);
