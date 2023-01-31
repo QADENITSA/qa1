@@ -1,13 +1,22 @@
 package Home.work4;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayMultipleElements {
     public static void main(String[] args) {
-        ArrayList<Integer> massy = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            massy.add(i*5);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter number: ");
+        int volArray = scanner.nextInt();
+
+        int[] arr;
+        arr = new int[volArray];
+
+        for (int i = 0; i < volArray; i++) {
+            arr[i] = i * 5;
         }
-        System.out.println(massy);
+        System.out.println(Arrays.toString(arr));
     }
 }
+

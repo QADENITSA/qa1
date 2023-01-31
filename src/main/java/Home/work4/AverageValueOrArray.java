@@ -1,20 +1,27 @@
 package Home.work4;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class AverageValueOrArray {
     public static void main(String[] args) {
-        ArrayList<Integer> massy = new ArrayList<>();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter number: ");
+        int numN = scanner.nextInt();
+
+        int[] arr;
+        arr = new int[numN];
         float sum = 0;
         float average = 0;
 
-        for (int i = 0; i < 20; i++) {
-            massy.add(i * 5);
+        for (int i = 0; i < numN; i++) {
+            arr[i] = i * 5;
         }
-        System.out.println(massy);
-        for (int z = 0; z < 20; z++) {
-            sum += massy.get(z);
-            average = sum / massy.size();
+        System.out.println(Arrays.toString(arr));
+        for (int z = 0; z < numN; z++) {
+            sum += arr[z];
+            average = sum / arr.length;
         }
         System.out.println("Average Score is : " + average);
     }

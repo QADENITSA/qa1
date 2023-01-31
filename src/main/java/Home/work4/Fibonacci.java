@@ -1,16 +1,31 @@
 package Home.work4;
+import java.util.Scanner;
 
 public class Fibonacci {
-    public static void main(String[] args) {
-        int n = 8;
-        int n1 = 0;
-        int n2 = 1;
-        int n3 ;
-        for (int i = 0; i < n; i++) {
-            n3 = n1 + n2;
-            n1 = n2;
-            n2 = n3;
-            System.out.print(" " + n3);
+    static int calculateSum(int n) {
+        if (n <= 0)
+            return 0;
+
+        int fib[] = new int[n + 1];
+        fib[0] = 0;
+        fib[1] = 1;
+
+        int sum = fib[0] + fib[1];
+
+        for (int i = 2; i <= n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+            sum += fib[i];
         }
+
+        return sum;
+    }
+
+    public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter number: ");
+        int n = scanner.nextInt();
+        System.out.println("Sum of Fibonacci" +
+                " numbers is : " + calculateSum(n));
+        scanner.close();
     }
 }
